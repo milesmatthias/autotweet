@@ -1,2 +1,3 @@
 .sekrets.key
 *.swp
+vendor/bundle

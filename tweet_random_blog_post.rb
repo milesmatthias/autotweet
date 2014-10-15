@@ -1,5 +1,17 @@
 #!/usr/bin/env ruby
 
+
+#
+  require 'fileutils'
+  mydir = File.expand_path(File.dirname(__FILE__))
+  Dir.chdir(mydir)
+
+#
+  unless ENV['BUNDLE_GEMFILE']
+    command = "bundle exec tweet_random_blog_post.rb"
+    exec(command)
+  end
+
 #
   require 'pry'
   require 'twitter'
@@ -7,6 +19,7 @@
   require 'open-uri'
   require 'sekrets'
   require 'yaml'
+
 
 
 #
