@@ -6,8 +6,6 @@
   mydir = File.expand_path(File.dirname(__FILE__))
   Dir.chdir(mydir)
 
-puts Dir.pwd
-
 #
   unless ENV['BUNDLE_GEMFILE']
     command = "bundle exec ruby tweet_random_blog_post.rb"
